@@ -68,6 +68,16 @@
     console.log(typeof str4); // string
     const num1 = Number(str4);
     console.log(typeof num1); // number
-    
+
+    // 문자열과 char는 공유된다
+    // 홑따음표도 문자열이다
+    console.log("a123"); //a123
+    console.log(typeof 'a123'); //string
+
+    // 백틱도 문자열이다
+    console.log(`a123`); //a123
+
+    // 백틱을 사용하면 문자열포맷팅이 가능하다
+    console.log(`a123 ${str}`); //a123 a
 
 </script>
