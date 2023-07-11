@@ -18,4 +18,23 @@
         // getName2 : () => this.name,
     };
 
+    // 클래스
+    class Cat {
+        constructor(name, age){
+            // 자바스크립트에서는
+            // 생성자에서 this.~~를 사용해서
+            // 초기화해주면 프로퍼티가 생성된다
+            this.name = name;
+            this.age = age;
+        }
+
+        // 자바스크립트에서는 접근 제한자가 없음
+        getName(){
+            return this.name;
+        }
+    }
+
+    const cat = new Cat("야옹이", 12);
+    console.log(cat.name); //야옹이
+
 </script>
